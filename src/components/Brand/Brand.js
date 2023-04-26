@@ -4,7 +4,7 @@ import { useTheme } from '../../hooks';
 const Brand = ({ height, width, mode }) => {
     const { Layout, Images } = useTheme();
     return (<View testID={'brand-img-wrapper'} style={{ height, width }}>
-      <Image testID={'brand-img'} style={Layout.fullSize} source={Images.logo} resizeMode={mode}/>
+      <Image testID={'brand-img'} style={Layout.fullSize} source={Images.brand.logo} resizeMode={mode}/>
     </View>);
 };
 Brand.defaultProps = {

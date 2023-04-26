@@ -65,9 +65,14 @@ export default function ({ FontSize, Colors }) {
         textLight: {
             color: Colors.textGray200,
         },
+        textWhite: {
+            color: Colors.textGray0,
+        },
         textLobster: {
             fontFamily: 'lobster',
             fontWeight: 'normal',
         },
+
+
     });
 }

@@ -140,8 +140,8 @@ const Welcome = () => {
             <Text style={[Fonts.textWhite]}>Sign In</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={[Common.button.rounded]} >
-            <Text style={[Fonts.textWhite]}>Sign Up</Text>
+          <TouchableOpacity style={[Common.button.rounded, Common.button.outlineRounded]} >
+            <Text style={[Fonts.textGray800]}>Sign Up</Text>
           </TouchableOpacity>
             </View>
         <View style={[
@@ -151,7 +151,7 @@ const Welcome = () => {
             Gutters.smallTMargin,
         ]}>
 
-          <TouchableOpacity style={[Common.button.circle, Gutters.regularBMargin]} onPress={() => fetchOne(`${Math.ceil(Math.random() * 10 + 1)}`)}>
+          {/* <TouchableOpacity style={[Common.button.circle, Gutters.regularBMargin]} onPress={() => fetchOne(`${Math.ceil(Math.random() * 10 + 1)}`)}>
             {isFetching || isLoading ? (<ActivityIndicator />) : (<Image source={Images.icons.send} style={{ tintColor: isDark ? '#A6A4F0' : '#44427D' }}/>)}
           </TouchableOpacity>
 
@@ -161,7 +161,7 @@ const Welcome = () => {
 
           <TouchableOpacity style={[Common.button.circle, Gutters.regularBMargin]} onPress={() => onChangeLanguage(i18next.language === 'fr' ? 'en' : 'fr')}>
             <Image source={Images.icons.translate} style={{ tintColor: isDark ? '#A6A4F0' : '#44427D' }}/>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </View>
     </ScrollView>);

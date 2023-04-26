@@ -15,5 +15,13 @@ export default function ({}) {
             send: require('./assets/images/send.png'),
             translate: require('./assets/images/translate.png'),
         },
+
+        backgrounds: {
+            bgWelcome: require('./assets/images/backgrounds/welcome.png'),
+        },
+        brand: {
+            logo: require('./assets/images/brand/logo.png'),
+        },
+
     };
 }
